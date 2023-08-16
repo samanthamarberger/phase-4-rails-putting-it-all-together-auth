@@ -24,7 +24,10 @@ function LoginForm({ onLogin }) {
         r.json().then((err) => setErrors(err.errors));
       }
     });
+    console.log("errors:", errors);
   }
+
+  
 
   return (
     <form onSubmit={handleSubmit}>
